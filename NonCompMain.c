@@ -37,7 +37,7 @@ task main()
 	{
 		drive(vexRT[Ch3], vexRT[Ch2]);
 
-		//driveDistance(circumference);
+		driveDistance(circumference);
 
 
 
