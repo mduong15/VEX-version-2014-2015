@@ -37,11 +37,8 @@ task main()
 	{
 		drive(vexRT[Ch3], vexRT[Ch2]);
 
-		///*
-		while (mainArmDegree > 90){
-			moveMainLift(-80);
-		}
-		//*/
+		//driveDistance(circumference);
+
 
 
 		//MAIN LIFT

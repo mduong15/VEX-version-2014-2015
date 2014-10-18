@@ -4,6 +4,13 @@
 	motor[rDrive] = right; \
 }
 
+#define driveDistance(inch){ \
+	while (lDriveSens < inch/circumference *627.2) \
+	{ \
+		drive(80, 80); \
+	} \
+}
+
 #define moveMainLift(speed) { \
 	motor[lMainArm] = speed; \
 	motor[rMainArm] = speed; \
@@ -33,7 +40,7 @@
 
 
 //to get degree of arms
-#define rawSecArmDegree (encoderDegrees(secArmSens, 60/12) - 30)
+#define rawSecArmDegree (encoderDegrees(secArmSens, 60/12) -45)
 
 #define mainArmDegree (encoderDegrees(mainArmSens, 60/12) + 30)
 #define secArmDegree 90 + mainArmDegree - (-rawSecArmDegree)

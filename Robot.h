@@ -5,6 +5,9 @@
 #define SEC_LIFT_IDLE_SPEED 15
 #define CLAW_PIVOT_SPEED 75
 
+#define circumference 8/12 * 4 * PI
+
 //ENCODER MACROS
 #define mainArmSens nMotorEncoder[lMainArm]
 #define secArmSens nMotorEncoder[lSecArm]
+#define lDriveSens nMotorEncoder[lDrive]
